@@ -1,1 +1,14 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>OneSignal Service Worker</title>
+</head>
+<body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker/onesignal-service-worker.js');
+    }
+  </script>
+</body>
+</html>
